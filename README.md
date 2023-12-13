@@ -5,6 +5,8 @@ Enhancing Political Brand Reputation Through Twitter Sentiment Analysis
 
 >  **Project Authors:** Richard Taracha || Juliet Thuku || Eva Kiio
 
+> **Flatiron School Data Science Program**
+
 >  **Date:** 14/12/2023
 > 
 ![Taming the TwitterVerse](https://github.com/TarachaR/Taming-the-TwitterVerse-Politicians-Embrace-Sentiment-Analysis-to-Shape-Public-Perception/assets/67068918/18cd6417-dd21-450c-9814-fb7b02b2943c)
