@@ -126,6 +126,9 @@ By developing a high-performance classification model and emphasizing practical,
 
 ---
 > ## 7. Recording the Experimental Design
+Project excecution involves the following:
+**Data Understanding and Cleaning**
+
 
 
 
