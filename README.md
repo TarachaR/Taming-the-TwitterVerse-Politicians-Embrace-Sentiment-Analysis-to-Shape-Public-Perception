@@ -62,6 +62,44 @@ Enhancing Political Brand Reputation Through Twitter Sentiment Analysis
 - Date range: January 1, 2019 - April 28, 2022
 - Number of tweets: 43,479
 - Attribution: The data used in this project was scraped from Twitter using Twint, an unofficial Twitter scraper. The data is publicly available on Twitter and is not owned by the author of this project.
+- Data Dictionary:
+
+  | Field | Description |
+    |-|-|
+    | id | Unique identifier for the tweet |
+    | conversation_id | Unique identifier for the conversation thread |
+    | created_at | Date and time the tweet was created |
+    | time | Time zone of the tweet |
+    | user_id | Unique identifier for the user who posted the tweet |
+    | username | Twitter handle of the user who posted the tweet |
+    | name | Name of the user who posted the tweet |
+    | place | Location of the user who posted the tweet (if available) |
+    | tweet | Content of the tweet |
+    | language | Language of the tweet |  
+    | mentions | Twitter handles mentioned in the tweet |
+    | urls | URLs mentioned in the tweet |
+    | photos | Photos attached to the tweet |
+    | replies_count | Number of replies to the tweet |
+    | retweets_count | Number of retweets of the tweet |
+    | likes_count | Number of likes on the tweet |
+    | hashtags | Hashtags used in the tweet |
+    | cashtags | Cashtags used in the tweet |
+    | link | URL of the tweet |
+    | retweet | Whether the tweet is a retweet |
+    | quote_url | URL of the quoted tweet (if applicable) |
+    | video | Whether the tweet includes a video |
+    | thumbnail | Thumbnail image for the video (if applicable) |
+    | near | Location near which the tweet was posted (if available) |
+    | geo | Geolocation coordinates of the tweet (if available) |
+    | source | Application used to post the tweet |  
+    | user_rt_id | Unique identifier of the retweeted tweet (if applicable) |
+    | user_rt | Whether the user retweeted the tweet |
+    | retweet_id | Unique identifier of the retweeted tweet (if applicable) |  
+    | reply_to | Unique identifier of the tweet being replied to (if applicable) |
+    | retweet_date | Date and time the tweet was retweeted (if applicable) |
+    | translate | Translated text of the tweet (if applicable) |
+    | trans_src | Source language of the translation (if applicable) |  
+    | trans_dest | Destination language of the translation (if applicable) |
 
 </br>
 
