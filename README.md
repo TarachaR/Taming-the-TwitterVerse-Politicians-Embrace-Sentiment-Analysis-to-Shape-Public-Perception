@@ -125,7 +125,7 @@ The following are the required deliverables for this project:
 - A **GitHub repository**
 - A **Jupyter Notebook**
 - A **non-technical presentation**
-- A **Deployed Streamlit Web Application**
+- A **Deployed Streamlit Web Application** <a href="[https://cancer-deathrate-regression-analysis.onrender.com](https://tamingthetwitterverse.streamlit.app/)" target="_blank">Click Me!</a>
 
 
 </br>
