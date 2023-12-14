@@ -120,14 +120,56 @@ By developing a high-performance classification model and emphasizing practical,
 
 ---
 > ## 6. Project Structure & Deliverables
+> 
+The following are the required deliverables for this project:
+- A **GitHub repository**
+- A **Jupyter Notebook**
+- A **non-technical presentation**
+- A **Deployed Streamlit Web Application**
 
 
 </br>
 
 ---
 > ## 7. Recording the Experimental Design
-Project excecution involves the following:
-**Data Understanding and Cleaning**
+Adapting the methodology for a Twitter sentiment analysis project involves focusing on the specific aspects related to text data and sentiment classification. Here's a revised methodology for your Twitter sentiment analysis project:
+
+1. **Data Collection and Preprocessing:**
+    Gather tweets using relevant usrenames or keywords.
+    Preprocess the text data by removing mentions, hashtags, and URLs, and handle special characters.
+    Explore the dataset to understand its structure, size, and language-specific nuances.
+    Clean the data by addressing issues like spelling errors and removing irrelevant information.
+
+2. **Exploratory Data Analysis (EDA):**
+    Perform EDA to understand the distribution of sentiment classes in the dataset.
+    Analyze word frequencies, common phrases, and trends in positive, negative, and neutral tweets.
+    Identify any patterns or correlations between tweet features and sentiment labels.
+
+3. **Data Visualization:**
+    Utilize word clouds, bar charts, and pie charts to visually represent the distribution of sentiments.
+    Create visualizations that showcase the most frequent words associated with each sentiment class.
+
+4. **Text Representation:**
+    Convert the text data into a suitable format for machine learning models, using TF-IDF.
+    Explore different text representation techniques and choose the one that best captures the nuances of sentiment in tweets.
+
+5. **Machine Learning Modeling:**
+    Build and train various sentiment analysis models, such as Complement Naive Bayes, Random Forests, and Logistic Regression.
+    Evaluate model performance using metrics like accuracy, precision, recall, and F1 score. Here out metric of choice was the Average Macro-Recall Score.
+    Address the challenge of imbalanced classes by employing techniques like Random Oversampling.
+    Consider the interpretability of the models, especially if explaining the results is important.
+
+6. **Hyperparameter Tuning and Model Selection:**
+    Fine-tune the hyperparameters of the chosen model to optimize performance.
+    Select the model that demonstrates the best balance between precision and recall for sentiment classification.
+
+7. **Deployment:**
+    Deploy the chosen model as a Streamlit Web application to perform sentiment analysis on incoming tweets.
+
+8. **Results Interpretation and Reporting:**
+    Interpret the model predictions and analyze any misclassifications.
+    Provide insights into the most influential features or words contributing to each sentiment class.
+    Summarize the overall findings in a clear and concise manner suitable for sharing on Twitter or other platforms.
 
 
 
