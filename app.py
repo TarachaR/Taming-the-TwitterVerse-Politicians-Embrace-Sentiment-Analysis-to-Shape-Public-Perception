@@ -70,6 +70,7 @@ def load_lottiefile(filepath: str):
 from streamlit_lottie import st_lottie # pip install streamlit-lottie
 # Define the paths of the lottie files
 # path = r"D:\Natural Language Processing\Phase 4 Project\templates\assets\lottie files\twitter-lottie.json"
+
 path = "./assets/lottie files/twitter-lottie.json"
 
 # Load the Lottie File
@@ -123,7 +124,7 @@ def main():
     
 
     with st.form(key='my_form'):
-        raw_text = st.text_area("Type Here")
+        raw_text = st.text_area("Enter Your Text Here")
         submit_text = st.form_submit_button(label='Analyze')
 
     if submit_text:
