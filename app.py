@@ -37,15 +37,11 @@ pd.set_option('display.max_colwidth', None)
 # Load the Text Cleaning Package
 import neattext.functions as nfx
 
-
 st.set_page_config(
     layout="wide",
     page_title="Twitter Sentiment Analysis",
     page_icon="C:\\Users\\tarac\\Downloads\\Cancer Death Rate Prediction - Regression Analysis\\streamlit_application\\images\\pink-ribbon.png",
     initial_sidebar_state="expanded",
-    # initial_sidebar_state='auto',
-    # footer=False
-
 )
 
 # Hide the Streamlit Footer
@@ -61,7 +57,7 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # Load the Lottie File
-@st.cache_data
+@st.cache
 def load_lottiefile(filepath: str):
     with open(filepath) as f:
         return json.load(f)
@@ -69,9 +65,7 @@ def load_lottiefile(filepath: str):
 # Load lottie files
 from streamlit_lottie import st_lottie # pip install streamlit-lottie
 # Define the paths of the lottie files
-# path = r"D:\Natural Language Processing\Phase 4 Project\templates\assets\lottie files\twitter-lottie.json"
-
-# path = "./assets/lottie files/twitter-lottie.json"
+path = "./assets/lottie files/twitter-lottie.json"
 
 # Load the Lottie File
 lottie_twitter = load_lottiefile(path)
@@ -80,13 +74,12 @@ lottie_twitter = load_lottiefile(path)
 with st.sidebar:
     st_lottie(lottie_twitter, quality='high', speed=1, height=300, key="initial")
 
-
 # Load the Models
 log_clf_CV = joblib.load('models/log_clf_CV.pkl')
 
 # Define the paths of the lottie files
 lottie_files = {
-    "Positive" : "/./assets/lottie files/Positive - 1701447921922.json",
+    "Positive" : "./assets/lottie files/Positive - 1701447921922.json",
     "Neutral" : "./assets/lottie files/Neutral - 1701448191091.json",
     "Negative" : "./assets/lottie files/Negative - 1701448132377.json",
 }
@@ -101,10 +94,6 @@ def get_lottie_file(sentiment):
         lottie_file = json.load(file)
     return lottie_file
 
-
-# image = Image.open("./assets/images/Twitter Sentiment Analysis.png")
-# st.image(image, width=1100)
-
 # Link to the Roboto font
 st.markdown('<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">', unsafe_allow_html=True)
 
@@ -114,17 +103,11 @@ html_temp = """
 st.markdown(html_temp, unsafe_allow_html=True)
 
 def main():
-
-    
     st.subheader("Sentiment in Text")
-
-    # Add a sidebar
     st.sidebar.title("Twitter Sentiment Analysis")
 
-    
-
     with st.form(key='my_form'):
-        raw_text = st.text_area("Enter Your Text Here")
+        raw_text = st.text_area("Type Here")
         submit_text = st.form_submit_button(label='Analyze')
 
     if submit_text:
@@ -134,9 +117,7 @@ def main():
         prediction = predict_sentiment(raw_text)
 
         with col1:
-            # st.success("Original Text")
             st.markdown('<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">', unsafe_allow_html=True)
-            # Use the Roboto font
             st.markdown("""
             <h4 style='font-family: Jua'>Original Text:
             </p>
@@ -144,23 +125,17 @@ def main():
             , unsafe_allow_html=True)
             st.success(raw_text)
 
-            # st.success("Prediction")
             st.markdown('<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">', unsafe_allow_html=True)
-            # Use the Roboto font
             st.markdown("""
             <h4 style='font-family: Jua'>Prediction: 
             </p>
             """
             , unsafe_allow_html=True) 
             st.success(prediction)
-            
 
         with col2:
-            # st.success("Sentiment")
             lottie_file = get_lottie_file(prediction)
             st_lottie(lottie_file, width=350, height=350)
-
-
 
 if __name__ == '__main__':
     main()
@@ -169,5 +144,3 @@ st.sidebar.markdown('''
 ---
 Created with ❤️ by Group 1.
 ''')
-
-
