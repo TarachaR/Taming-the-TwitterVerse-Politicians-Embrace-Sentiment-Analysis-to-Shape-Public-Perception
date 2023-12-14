@@ -211,7 +211,24 @@ Adapting the methodology for a Twitter sentiment analysis project involves focus
 
 **Based on the summary table, the best performing models are the Tuned `Logistic Regression` and `Tuned Oversampled Logistic Regression`, which have the highest values for all the metrics. These models are logistic regression models that have been tuned using some optimization techniques, such as grid search to find the best hyperparameters. They also use Random oversampling, which is a technique to balance the class distribution by creating synthetic samples of the minority class. These models can accurately classify the sentiments of the data, and they have a good balance between precision and recall for each class.**
 
+(a)  TUNED LOGISTIC REGRESSION MODEL:
+
+![Tuned_LR](https://github.com/TarachaR/Taming-the-TwitterVerse-Politicians-Embrace-Sentiment-Analysis-to-Shape-Public-Perception/assets/67068918/561f324b-97dd-44e1-9baf-bae51cfbcfcc)
+
+(b)  OVER-SAMPLED TUNED LOGISTIC REGRESSION MODEL:
+
+![Tuned_Oversample_LR](https://github.com/TarachaR/Taming-the-TwitterVerse-Politicians-Embrace-Sentiment-Analysis-to-Shape-Public-Perception/assets/67068918/91c3e1b2-b3ca-4e13-afa9-a67d886d9f77)
+
+
 **The worst performing models are `Tuned RandomForest` and `Tuned Oversampled Random Forest`, which have the lowest values for most of the metrics. These models are random forest models that have been tuned using some optimization techniques, but they have a poor performance on the sentiment analysis task. They have a very low recall for the negative and positive classes, which means that they fail to identify most of the negative and positive sentiments in the data. They also have a low accuracy and F1-score, which means that they have a poor balance between precision and recall.**
+
+(c) TUNED RANDOM FOREST MODEL:
+
+![Tuned_RF](https://github.com/TarachaR/Taming-the-TwitterVerse-Politicians-Embrace-Sentiment-Analysis-to-Shape-Public-Perception/assets/67068918/5b1e9e9d-14f0-4522-b5ce-33c84a53e607)
+
+(d) OVER-SAMPLED TUNED RANDOM FOREST MODEL:
+
+![Tuned_Oversampled_RF](https://github.com/TarachaR/Taming-the-TwitterVerse-Politicians-Embrace-Sentiment-Analysis-to-Shape-Public-Perception/assets/67068918/634a6d51-aed0-46e8-9035-ea439664ed48)
 
 3. Feature Importance - Tuned LR Model
 
