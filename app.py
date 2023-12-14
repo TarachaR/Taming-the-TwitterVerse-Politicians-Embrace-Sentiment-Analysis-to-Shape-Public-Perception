@@ -86,7 +86,7 @@ log_clf_CV = joblib.load('models/log_clf_CV.pkl')
 
 # Define the paths of the lottie files
 lottie_files = {
-    "Positive" : "./assets/lottie files/Positive - 1701447921922.json",
+    "Positive" : "/lottie files/Positive - 1701447921922.json",
     "Neutral" : "./assets/lottie files/Neutral - 1701448191091.json",
     "Negative" : "./assets/lottie files/Negative - 1701448132377.json",
 }
