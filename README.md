@@ -120,6 +120,12 @@ By developing a high-performance classification model and emphasizing practical,
 
 ---
 > ## 6. Project Structure & Deliverables
+> 
+The following are the required deliverables for this project:
+- A **GitHub repository**
+- A **Jupyter Notebook**
+- A **non-technical presentation**
+- A **Deployed Streamlit Web Application**
 
 
 </br>
