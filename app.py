@@ -71,7 +71,7 @@ from streamlit_lottie import st_lottie # pip install streamlit-lottie
 # Define the paths of the lottie files
 # path = r"D:\Natural Language Processing\Phase 4 Project\templates\assets\lottie files\twitter-lottie.json"
 
-path = ("./assets/lottie files/twitter-lottie.json")
+path = "./assets/lottie files/twitter-lottie.json"
 
 # Load the Lottie File
 lottie_twitter = load_lottiefile(path)
@@ -86,9 +86,9 @@ log_clf_CV = joblib.load('models/log_clf_CV.pkl')
 
 # Define the paths of the lottie files
 lottie_files = {
-    "Positive" : "./assets/lottie files/Positive - 1701447921922",
-    "Neutral" : "./assets/lottie files/Neutral - 1701448191091",
-    "Negative" : "./assets/lottie files/Negative - 1701448132377",
+    "Positive" : "./assets/lottie files/Positive - 1701447921922.json",
+    "Neutral" : "./assets/lottie files/Neutral - 1701448191091.json",
+    "Negative" : "./assets/lottie files/Negative - 1701448132377.json",
 }
 
 # Fxn
