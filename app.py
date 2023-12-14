@@ -71,7 +71,7 @@ from streamlit_lottie import st_lottie # pip install streamlit-lottie
 # Define the paths of the lottie files
 # path = r"D:\Natural Language Processing\Phase 4 Project\templates\assets\lottie files\twitter-lottie.json"
 
-path = "./assets/lottie files/twitter-lottie.json"
+path = ("./assets/lottie files/twitter-lottie.json")
 
 # Load the Lottie File
 lottie_twitter = load_lottiefile(path)
