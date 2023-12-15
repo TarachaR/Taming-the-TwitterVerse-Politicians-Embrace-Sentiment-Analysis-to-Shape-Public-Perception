@@ -126,6 +126,8 @@ The following are the required deliverables for this project:
 - A **Jupyter Notebook**
 - A **non-technical presentation**
 - A **Deployed Streamlit Web Application** [Click Me!](https://tamingthetwitterverse.streamlit.app/)
+  
+![Screenshot (106)](https://github.com/TarachaR/Taming-the-TwitterVerse-Politicians-Embrace-Sentiment-Analysis-to-Shape-Public-Perception/assets/67068918/a52db26a-1610-4ad4-be5f-848691476a52)
 
 
 </br>
